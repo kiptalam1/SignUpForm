@@ -20,7 +20,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
     gap: 10px;
-    height: 600px;
+    min-height: 600px;
     width: 500px;
     border-radius: 5px;
     font-size: 1.25rem;
@@ -33,24 +33,46 @@ h1 {
 }
 .signupField {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 10px 30px;
 }
 .signupField label {
-    width: 30%;
-    min-width: 100px;
+    width: 30%; 
+    min-width: 100px; 
 }
 
 .signupField input, 
 .signupField select {
-    flex: 1;
     padding: 8px;
     font-size: 1.1rem;
     border-radius: 5px;
     outline: none;
     background-color: rgba(128, 128, 128, 0.845);
     color: whitesmoke;
-    
+    min-width: 200px;
+    flex-grow: 1;
+}
+/* invalid fields */
+input.invalid {
+    border: 2px solid #900;
+    background-color: #fdd;
+    color: #900
+}
+.signupField span {
+    font-size: .8rem;
+    width: 100%;
+    display: block;
+    color: red;
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+.signupField span.error {
+    font-size: .8rem;
+    width: 100%;
+    color: red;
+    display: block;
 }
 .form button {
     width: 90%;
