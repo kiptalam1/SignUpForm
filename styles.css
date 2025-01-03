@@ -1,0 +1,60 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    gap: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+.signupField {
+    display: flex;
+    align-items: center;
+    margin: 10px 30px;
+}
+.signupField label {
+    width: 30%;
+    min-width: 100px;
+}
+
+.signupField input, 
+.signupField select {
+    flex: 1;
+    padding: 8px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.845);
+    color: whitesmoke;
+    
+}
+.form button {
+    width: 80%;
+    margin: 20px auto;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+
+}
+button:hover {
+    opacity: .7;
+}
