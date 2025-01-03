@@ -11,15 +11,16 @@
 </head>
 <body>
     <form action="" class="form" id="signupForm" novalidate>
+    <h1>Sign Up Form</h1>
         <!-- Email, Country, Zip Code, Password and Password Confirmation fields -->
         <div class="signupField">
             <label for="mail">Email</label>
-            <input type="email" name="email" id="mail">
+            <input type="email" name="email" id="mail" required>
             <span class="error" id="emailError"></span>
         </div>
         <div class="signupField">
             <label for="country">Country</label>
-            <select name="country" id="country">
+            <select name="country" id="country" required>
                 <option value="">Select your Country</option>
                 <option value="KE">Kenya</option>
                 <option value="UG">Uganda</option>
@@ -30,17 +31,17 @@
         </div>
         <div class="signupField">
             <label for="zipcode">Zip Code</label>
-            <input type="text" name="zip" id="zipcode">
+            <input type="text" name="zip" id="zipcode" required>
             <span class="error" id="zipcodeError"></span>
         </div>
         <div class="signupField">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required minlength="6">
             <span class="error" id="passwordError"></span>
         </div>
         <div class="signupField">
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password">
+            <input type="password" name="confirm-password" id="confirm-password" required minlength="6">
             <span class="error" id="confirmPasswordError"></span>
         </div>
         <button id="submit-btn" type="submit">Sign Up</button>
